@@ -1,0 +1,18 @@
+This is a data base that uses the structure of a linked list. It utilizes 
+multiple classes and calls functions within those classes using a driver
+file. This is written in object-oriented design. The Client class acts as
+the value to be inserted into the database. A client has a name, ID number,
+and a birthday. All of these fields stay parallel to the corresponding
+main client defined by the constructor. Inputs to the database and its
+occupancy are saved to the hard disk using file management functions found in 
+the FileManager class. Client is a friend of FileManager so Clients' datafields
+can be printed. The datafile is the actual representation of the database
+keeping track of inputs and organizing them in format. The format style of the
+ASCII character generated database are part of the functionalities in the
+FileManager class. This database also has a debug mode, the '-X' option
+which is parsed from the commandline parameters. Every function checks to see
+if debugging is on through setter functions that turn on or off a boolean
+flag based on the commandline arguments detected by the driver. Within
+each function, if debugging is on, it will display static messages to stderr
+as the program is running. Leaving this feature off simply makes these messages
+absent on output.
